@@ -10,13 +10,12 @@ def dog(bot,update):
     chat_id=update.message.chat_id
     bot.send_photo(chat_id,photo=url)
 
-while True:
-    u=Updater('1277896979:AAGbPOEyFsOhhtzIu44kLqaDpLyaJwR2USA')
-    dp=u.dispatcher
-    dp.add_handler(CommandHandler('dog',dog))
-    print('command  sent')
-    u.start_polling()
-    u.idle()
+u=Updater('1277896979:AAGbPOEyFsOhhtzIu44kLqaDpLyaJwR2USA')
+dp=u.dispatcher
+dp.add_handler(CommandHandler('dog',dog))
+print('command  sent')
+u.start_polling()
+u.idle()
   
 
     
