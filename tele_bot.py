@@ -1,6 +1,5 @@
 from telegram.ext import Updater,CommandHandler
 import requests #gets data from cloud
-
 def bot_command():
     context= requests.get('https://random.dog/woof.json').json()
     url=context['url']
