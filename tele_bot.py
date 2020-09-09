@@ -15,6 +15,7 @@ while True:
     u=Updater('1277896979:AAGbPOEyFsOhhtzIu44kLqaDpLyaJwR2USA')
     dp=u.dispatcher
     dp.add_handler(CommandHandler('dog',dog))
+    print('command  sent')
     u.start_polling()
     u.idle()
   
