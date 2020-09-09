@@ -17,7 +17,3 @@ print('command  sent')
 u.start_polling()
 u.idle()
   
-
-    
-  
-
